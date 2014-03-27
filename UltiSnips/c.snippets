@@ -18,7 +18,7 @@ snippet inc "#include local header (inc)"
 #include "${1:`!p snip.rv = snip.basename + '.h'`}"
 endsnippet
 
-snippet Inc "#include <> (Inc)"
+snippet #inc "#include <> (Inc)"
 #include <${1:.h}>
 endsnippet
 
@@ -32,10 +32,16 @@ $0
 endsnippet
 
 snippet main "main() (main)"
-int main(int argc, char const *argv[])
+int main(int argc, char* argv[])
 {
 	${0:/* code */}
 	return 0;
+}
+endsnippet
+
+snippet { "{"
+{
+	${0:/*code here*/}	
 }
 endsnippet
 
